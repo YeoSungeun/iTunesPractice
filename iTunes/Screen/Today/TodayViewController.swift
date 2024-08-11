@@ -1,5 +1,5 @@
 //
-//  SearchViewController.swift
+//  TodayViewController.swift
 //  iTunes
 //
 //  Created by 여성은 on 8/12/24.
@@ -7,6 +7,6 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class TodayViewController: UIViewController {
     
 }
