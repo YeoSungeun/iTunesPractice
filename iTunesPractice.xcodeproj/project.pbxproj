@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A0F91A592C696AA90065543E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F91A582C696AA90065543E /* AppDelegate.swift */; };
 		A0F91A5B2C696AA90065543E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F91A5A2C696AA90065543E /* SceneDelegate.swift */; };
-		A0F91A602C696AA90065543E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A0F91A5F2C696AA90065543E /* Base */; };
 		A0F91A622C696AAB0065543E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0F91A612C696AAB0065543E /* Assets.xcassets */; };
 		A0F91A652C696AAB0065543E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A0F91A642C696AAB0065543E /* Base */; };
 		A0F91A6F2C696B390065543E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F91A6E2C696B390065543E /* MainTabBarController.swift */; };
@@ -24,13 +23,13 @@
 		A0F91A8B2C69876B0065543E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A0F91A8A2C69876B0065543E /* Kingfisher */; };
 		A0F91A8D2C6988460065543E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F91A8C2C6988460065543E /* NetworkManager.swift */; };
 		A0F91A8F2C698AAA0065543E /* SoftwareResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F91A8E2C698AA90065543E /* SoftwareResponse.swift */; };
+		A0F91A962C6A3CA80065543E /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F91A952C6A3CA80065543E /* SearchResultTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A0F91A552C696AA90065543E /* iTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0F91A552C696AA90065543E /* iTunesPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0F91A582C696AA90065543E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0F91A5A2C696AA90065543E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A0F91A5F2C696AA90065543E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0F91A612C696AAB0065543E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0F91A642C696AAB0065543E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0F91A662C696AAB0065543E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,6 +41,7 @@
 		A0F91A7D2C696D5F0065543E /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		A0F91A8C2C6988460065543E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A0F91A8E2C698AA90065543E /* SoftwareResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareResponse.swift; sourceTree = "<group>"; };
+		A0F91A952C6A3CA80065543E /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 		A0F91A562C696AA90065543E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A0F91A552C696AA90065543E /* iTunes.app */,
+				A0F91A552C696AA90065543E /* iTunesPractice.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,12 +83,12 @@
 				A0F91A6C2C696B110065543E /* Screen */,
 				A0F91A582C696AA90065543E /* AppDelegate.swift */,
 				A0F91A5A2C696AA90065543E /* SceneDelegate.swift */,
-				A0F91A5E2C696AA90065543E /* Main.storyboard */,
 				A0F91A612C696AAB0065543E /* Assets.xcassets */,
 				A0F91A632C696AAB0065543E /* LaunchScreen.storyboard */,
 				A0F91A662C696AAB0065543E /* Info.plist */,
 			);
-			path = iTunes;
+			name = iTunes;
+			path = iTunesPractice;
 			sourceTree = "<group>";
 		};
 		A0F91A6C2C696B110065543E /* Screen */ = {
@@ -148,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				A0F91A752C696BE10065543E /* SearchViewController.swift */,
+				A0F91A952C6A3CA80065543E /* SearchResultTableViewCell.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -171,9 +172,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A0F91A542C696AA90065543E /* iTunes */ = {
+		A0F91A542C696AA90065543E /* iTunesPractice */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A0F91A692C696AAB0065543E /* Build configuration list for PBXNativeTarget "iTunes" */;
+			buildConfigurationList = A0F91A692C696AAB0065543E /* Build configuration list for PBXNativeTarget "iTunesPractice" */;
 			buildPhases = (
 				A0F91A512C696AA90065543E /* Sources */,
 				A0F91A522C696AA90065543E /* Frameworks */,
@@ -183,7 +184,7 @@
 			);
 			dependencies = (
 			);
-			name = iTunes;
+			name = iTunesPractice;
 			packageProductDependencies = (
 				A0F91A822C69874C0065543E /* RxCocoa */,
 				A0F91A842C69874C0065543E /* RxSwift */,
@@ -191,7 +192,7 @@
 				A0F91A8A2C69876B0065543E /* Kingfisher */,
 			);
 			productName = iTunes;
-			productReference = A0F91A552C696AA90065543E /* iTunes.app */;
+			productReference = A0F91A552C696AA90065543E /* iTunesPractice.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -209,7 +210,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A0F91A502C696AA90065543E /* Build configuration list for PBXProject "iTunes" */;
+			buildConfigurationList = A0F91A502C696AA90065543E /* Build configuration list for PBXProject "iTunesPractice" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -227,7 +228,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A0F91A542C696AA90065543E /* iTunes */,
+				A0F91A542C696AA90065543E /* iTunesPractice */,
 			);
 		};
 /* End PBXProject section */
@@ -239,7 +240,6 @@
 			files = (
 				A0F91A622C696AAB0065543E /* Assets.xcassets in Resources */,
 				A0F91A652C696AAB0065543E /* Base in Resources */,
-				A0F91A602C696AA90065543E /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0F91A8D2C6988460065543E /* NetworkManager.swift in Sources */,
+				A0F91A962C6A3CA80065543E /* SearchResultTableViewCell.swift in Sources */,
 				A0F91A8F2C698AAA0065543E /* SoftwareResponse.swift in Sources */,
 				A0F91A7C2C696D570065543E /* GameViewController.swift in Sources */,
 				A0F91A7A2C696D4B0065543E /* AppViewController.swift in Sources */,
@@ -266,14 +267,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A0F91A5E2C696AA90065543E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A0F91A5F2C696AA90065543E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A0F91A632C696AAB0065543E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -413,10 +406,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HP4XA8YZN3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iTunes/Info.plist;
+				INFOPLIST_FILE = iTunesPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -424,7 +416,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yeoyeo.iTunes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeoyeo.iTunesPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -445,10 +437,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HP4XA8YZN3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iTunes/Info.plist;
+				INFOPLIST_FILE = iTunesPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -456,7 +447,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yeoyeo.iTunes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeoyeo.iTunesPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -471,7 +462,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A0F91A502C696AA90065543E /* Build configuration list for PBXProject "iTunes" */ = {
+		A0F91A502C696AA90065543E /* Build configuration list for PBXProject "iTunesPractice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A0F91A672C696AAB0065543E /* Debug */,
@@ -480,7 +471,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A0F91A692C696AAB0065543E /* Build configuration list for PBXNativeTarget "iTunes" */ = {
+		A0F91A692C696AAB0065543E /* Build configuration list for PBXNativeTarget "iTunesPractice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A0F91A6A2C696AAB0065543E /* Debug */,

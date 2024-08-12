@@ -41,6 +41,7 @@ final class NetworkManager {
                 }
                 // data디코딩
                 if let data = data, let appData = try? JSONDecoder().decode(SoftwareResponse.self, from: data) {
+                    print(appData)
                     observer.onNext(appData)
                     observer.onCompleted() // 끝났다고 알려주는! 이거를 한번에 하는게 있었는데...single!
                 } else  {
