@@ -24,6 +24,8 @@
 		A0F91A8D2C6988460065543E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F91A8C2C6988460065543E /* NetworkManager.swift */; };
 		A0F91A8F2C698AAA0065543E /* SoftwareResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F91A8E2C698AA90065543E /* SoftwareResponse.swift */; };
 		A0F91A962C6A3CA80065543E /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F91A952C6A3CA80065543E /* SearchResultTableViewCell.swift */; };
+		A0F91A982C6A41A30065543E /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F91A972C6A41A30065543E /* SearchViewModel.swift */; };
+		A0F91A9A2C6A51430065543E /* SearchResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F91A992C6A51430065543E /* SearchResultCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		A0F91A8C2C6988460065543E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A0F91A8E2C698AA90065543E /* SoftwareResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareResponse.swift; sourceTree = "<group>"; };
 		A0F91A952C6A3CA80065543E /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
+		A0F91A972C6A41A30065543E /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		A0F91A992C6A51430065543E /* SearchResultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,8 @@
 			children = (
 				A0F91A752C696BE10065543E /* SearchViewController.swift */,
 				A0F91A952C6A3CA80065543E /* SearchResultTableViewCell.swift */,
+				A0F91A972C6A41A30065543E /* SearchViewModel.swift */,
+				A0F91A992C6A51430065543E /* SearchResultCollectionViewCell.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -256,7 +262,9 @@
 				A0F91A7C2C696D570065543E /* GameViewController.swift in Sources */,
 				A0F91A7A2C696D4B0065543E /* AppViewController.swift in Sources */,
 				A0F91A592C696AA90065543E /* AppDelegate.swift in Sources */,
+				A0F91A982C6A41A30065543E /* SearchViewModel.swift in Sources */,
 				A0F91A6F2C696B390065543E /* MainTabBarController.swift in Sources */,
+				A0F91A9A2C6A51430065543E /* SearchResultCollectionViewCell.swift in Sources */,
 				A0F91A7E2C696D5F0065543E /* TodayViewController.swift in Sources */,
 				A0F91A762C696BE10065543E /* SearchViewController.swift in Sources */,
 				A0F91A782C696D350065543E /* AcadeViewController.swift in Sources */,
