@@ -12,6 +12,7 @@ import RxSwift
 
 final class SearchResultCollectionViewCell: UICollectionViewCell {
     static let identifier = "SearchResultCollectionViewCell"
+    var disposeBag = DisposeBag()
     
     let screenshotImageView = {
         let view = UIImageView()
@@ -46,5 +47,10 @@ final class SearchResultCollectionViewCell: UICollectionViewCell {
     func configureUI(data: String) {
         guard let url = URL(string: data) else { return }
         screenshotImageView.kf.setImage(with: url)
+    }
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        disposeBag = DisposeBag()
     }
 }

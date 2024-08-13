@@ -51,8 +51,8 @@ class SearchViewController: UIViewController {
         let input = SearchViewModel.Input(searchText: searchController.searchBar.rx.text.orEmpty,
                                           searchButtonTap: searchController.searchBar.rx.searchButtonClicked)
         let output = viewModel.transform(input: input)
-        
-        output.searchResultList
+//        
+//        output.searchResultList
 //            .asDriver(onErrorJustReturn: [])
 //            .do(onDispose:  {
 //                self.tableView.dataSource = nil
@@ -73,7 +73,8 @@ class SearchViewController: UIViewController {
 //                    .disposed(by: cell.disposeBag)
 //            }
 //            .disposed(by: disposeBag)
-            
+        
+        output.searchResultList
                     .bind(to: tableView.rx.items(cellIdentifier: SearchResultTableViewCell.identifier, cellType: SearchResultTableViewCell.self)) { row, element, cell in
                         cell.configureCell(data: element)
                         let list = BehaviorRelay(value: element.screenshotUrls)

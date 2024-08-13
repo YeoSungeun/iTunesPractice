@@ -54,7 +54,7 @@ final class SearchResultTableViewCell: UITableViewCell {
                                 forCellWithReuseIdentifier: SearchResultCollectionViewCell.identifier)
         return collectionView
     }()
-    let disposeBag = DisposeBag()
+    var disposeBag = DisposeBag()
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         configure()
@@ -121,6 +121,12 @@ final class SearchResultTableViewCell: UITableViewCell {
         appIconImageView.kf.setImage(with: url)
         appNameLabel.text = data.trackCensoredName
   
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        disposeBag = DisposeBag()
     }
      
 }

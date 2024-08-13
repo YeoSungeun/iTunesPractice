@@ -16,7 +16,7 @@ struct SoftwareResult: Decodable {
     let screenshotUrls: [String]
     let artworkUrl60: String
     let trackCensoredName: String // 앱이름
-    let releaseNotes: String
+    let releaseNotes: String?
     let description: String
     let sellerName: String // 회사명
     let genres: [String]
